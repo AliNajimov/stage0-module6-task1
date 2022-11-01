@@ -12,12 +12,20 @@ public class Animal {
         getDescription();
     }
 
-    public String getDescription() {
+   public String getDescription() {
         String str;
         if (hasFur) {
-            str = String.format("This animal is mostly %s. It has %d paws and a fur.", color, numberOfPaws);
+            if (numberOfPaws == 1) {
+                str = String.format("This animal is mostly %s. It has %d paw and a fur.", color, numberOfPaws);
+            } else {
+                str = String.format("This animal is mostly %s. It has %d paws and a fur.", color, numberOfPaws);
+            }
         } else {
-            str = String.format("This animal is mostly %s. It has %d paws and no fur.", color, numberOfPaws);
+            if (numberOfPaws == 1) {
+                str = String.format("This animal is mostly %s. It has %d paw and a fur.", color, numberOfPaws);
+            } else {
+                str = String.format("This animal is mostly %s. It has %d paws and a fur.", color, numberOfPaws);
+            }
         }
         return str;
     }
