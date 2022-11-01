@@ -22,9 +22,9 @@ public class Animal {
             }
         } else {
             if (numberOfPaws == 1) {
-                str = String.format("This animal is mostly %s. It has %d paw and a fur.", color, numberOfPaws);
+                str = String.format("This animal is mostly %s. It has %d paw and no fur.", color, numberOfPaws);
             } else {
-                str = String.format("This animal is mostly %s. It has %d paws and a fur.", color, numberOfPaws);
+                str = String.format("This animal is mostly %s. It has %d paws and no fur.", color, numberOfPaws);
             }
         }
         return str;
