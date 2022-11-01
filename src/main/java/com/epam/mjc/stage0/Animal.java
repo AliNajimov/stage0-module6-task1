@@ -28,7 +28,7 @@ public class Animal {
                 str += numberOfPaws;
                 str += " paws and a fur";
             }
-
+            return str;
         } else {
             if (numberOfPaws == 1) {
                 str = "This animal is mostly ";
@@ -43,6 +43,6 @@ public class Animal {
                 str += numberOfPaws;
                 str += " paws and no fur";
             }
+            return str;
         }
-        return str;
     }
