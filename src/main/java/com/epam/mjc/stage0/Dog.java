@@ -5,6 +5,10 @@ public class Dog extends Animal {
         super("brown", 4, true);
     }
 
+    public Dog() {
+        super("brown", 4, true);
+    }
+
     @Override
     public String getDescription() {
         return super.getDescription();
