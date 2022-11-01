@@ -6,9 +6,12 @@ public class Bird extends Animal {
         super("blue", 2, false);
     }
 
+    public Bird() {
+        super("blue", 2, false);
+    }
+
     @Override
     public String getDescription() {
-        String str = "This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly.";
-        return str;
+        return super.getDescription()+" Moreover, it has 2 wings and can fly.";
     }
 }
